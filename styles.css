@@ -42,6 +42,13 @@ body {
     background: var(--LightGrayishViolet);
     line-height: 1.5;
 }
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
 h1, p {
     margin: 0;
 }
@@ -256,4 +263,31 @@ button {
     fill: #fff;
     transform: rotateY(180deg);
     margin-top: .2em;
+}
+
+@media (min-width: 900px){
+    main {
+        flex-direction: row;
+    }
+    .left{
+        width: 50%;
+    }
+    .right {
+        width: 50%;
+    }
+    .right .title {
+        text-align: left;
+    }
+    .right .description {
+        text-align: left;
+        margin-left: 0;
+    }
+    .form-object {
+        width: 40vw;
+        height: 80%;
+        left: -10%;
+    }
+    .mobile {
+        margin-right: 5em;
+    }
 }
