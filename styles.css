@@ -67,6 +67,18 @@ img {
     left: -50%;
     background: linear-gradient(var(--ModerateViolet), var(--LightViolet));
 }
+.form-object-light {
+    display: none;
+    width: 100vw;
+    height: 70%;
+    position: absolute;
+    z-index: -1;
+    border-radius: 16em 16em 0 0;
+    bottom: -10%;
+    right: -80%;
+    opacity: 0;
+    background: linear-gradient(var(--ModerateViolet), var(--LightViolet));
+}
 
 .mobile {
     position: relative;
@@ -178,7 +190,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin: .8em 0 1em 0;
+    margin: 0 0 1em 0;
 }
 .dog-photo {
     width: 2em;
@@ -265,9 +277,23 @@ button {
     margin-top: .2em;
 }
 
+.attribution {
+    font-size: .6rem;
+    text-align: center;
+    margin: 1em 0;
+    color: var(--VeryDarkDesaturatedViolet);
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+  }
+
 @media (min-width: 900px){
     main {
         flex-direction: row;
+    }
+    .mobile {
+        margin: 3em auto ;
     }
     .left{
         width: 50%;
@@ -286,6 +312,18 @@ button {
         width: 40vw;
         height: 80%;
         left: -10%;
+    }
+    .form-object-light {
+        display: block;
+        width: 100vw;
+        height: 70%;
+        position: absolute;
+        z-index: -1;
+        border-radius: 16em 16em 0 0;
+        bottom: -10%;
+        right: -80%;
+        opacity: 0.05;
+        background: linear-gradient(var(--ModerateViolet), var(--LightViolet));
     }
     .mobile {
         margin-right: 5em;
