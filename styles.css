@@ -316,7 +316,7 @@ button {
     .form-object-light {
         display: block;
         width: 100vw;
-        height: 70%;
+        height: 80%;
         position: absolute;
         z-index: -1;
         border-radius: 16em 16em 0 0;
